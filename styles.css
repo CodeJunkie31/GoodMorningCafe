@@ -1,0 +1,114 @@
+/*Colors: Webkit*/
+/*Google fonts*/
+
+/*Nav /* Style for the main section */
+#main-section {
+    /* Add any styling for the main section here */
+}
+
+/* Style for the navigation container */
+.nav-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Align items with space between */
+    align-items: center; /* Center items vertically */
+
+    padding: 10px; /* Add padding for spacing */
+    background-color: white; /* Background color for the navigation container */
+}
+
+/* Style for the logo */
+.nav-container img {
+    max-height: 250px; /* Set maximum height for the logo */
+    max-width: 100%; /* Ensure the logo stays within container width */
+    margin-right: 10px; /* Adjust margin to eliminate dead space between images */
+   
+}
+
+nav {
+    /* Ensure the nav tag is properly styled */
+    align-content: end;
+}
+/*The animation of the logo*/
+
+/* Style for the subsection container */
+#subsection {
+    background-color: #ffcc00; /* Set background color to yellow */
+    position: relative; /* Ensure relative positioning for absolute elements */
+    overflow: hidden; /* Hide overflow content */
+}
+
+/* Style for the animated text container */
+.animated-text {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; /* Example of using Google Fonts */
+    font-size: 36px;
+    color: white;
+    padding: 20px;
+}
+
+/* Animation for curving text */
+.animated-text::before {
+    content: 'Good Morning Cafe'; /* Text to be animated */
+    position: absolute;
+    top: 100%; /* Move text out of sight initially */
+    animation: curveText 5s linear infinite; /* Animation settings */
+}
+
+/* Animation keyframes for curving text */
+@keyframes curveText {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Style for logo image */
+.animated-text img {
+    opacity: 0; /* Initially hidden */
+    animation: fadeInImage 0.5s ease-in forwards; /* Animation settings */
+}
+
+/* Fade-in animation keyframes for logo image */
+@keyframes fadeInImage {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Style for text that fades in letter by letter */
+.fade-in-text {
+    opacity: 0; /* Initially hidden */
+    animation: fadeInText 0.4s forwards; /* Animation settings */
+}
+
+/* Fade-in animation keyframes for text */
+@keyframes fadeInText {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+/*The end of the yellow section*/
+
+/*THe business Introduction*/
+#Introduction {
+    background-color: #ffffff; /* Set background color to white */
+    padding: 20px; /* Add padding around the content */
+}
+
+#Introduction .Intro p {
+    font-family: 'Times New Roman', Times, serif; /* Set font family */
+    font-size: 16px; /* Set font size */
+    line-height: 1.5; /* Set line height for better readability */
+    color: #333333; /* Set text color */
+
+ 
+  
+
+}
+
+#Introduction .Intro p:first-child {
+    margin-top: 0; /* Remove top margin for the first paragraph */
+}
+
+#Introduction .Intro p:last-child {
+    margin-bottom: 0; /* Remove bottom margin for the last paragraph */
+}
+
